@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=1">
+	<title>Guess Color Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="page-wrapper">
+		<div id="congrats-hidden">
+			<h1>CONGRATULATIONS!!</h1>
+			<h1>YOU GOT IT!!</h1>
+		</div>
+
+		<div id="lost-hidden">
+			<h1>YOU</h1>
+			<h1>LOST..</h1>
+		</div>
+
+		<header>
+			<h1><span id="red">Guess </span><span id="green">this </span><span id="blue">color</span></h1>
+			<h1 id="target-color"></h1>
+
+			<nav id="features">
+				<span class="feature" id="reset" onclick="reset()">RESET</span>
+				
+				<span class="feature" id="new-colors" onclick="newColors()">
+					<span>NEW</span> <span>COLORS</span>
+				</span>
+			
+				<div class="feature" id="game-levels">
+					<span id="easy" onclick="easy()">EASY</span>
+					<span id="hard" onclick="hard()">HARD</span>
+				</div>
+			</nav>
+		</header>
+
+		<section>
+			<p id="easy-hard-message"></p>
+			
+			<div id="generated-colors">
+				<div class="row" id="row-1">
+					<div class="color" id="clr-1"></div>
+					<div class="color" id="clr-2"></div>
+					<div class="color" id="clr-3"></div>
+				</div>
+
+				<div class="row" id="row-2">
+					<div class="color" id="clr-4"></div>
+					<div class="color" id="clr-5"></div>
+					<div class="color" id="clr-6"></div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<p>FOUAD BOUKREDINE | 2019</p>
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
